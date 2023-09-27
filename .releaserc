@@ -4,10 +4,23 @@
     "main"
   ],
   "plugins": [
-    "@semantic-release/commit-analyzer",
-    ["@semantic-release/github",{
-      "successComment": false,
-      "failComment": false
-    }]
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "releaseRules": [
+          {
+            "message": "*",
+            "release": "patch"
+          }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "successComment": false,
+        "failComment": false
+      }
+    ]
   ]
 }
