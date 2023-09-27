@@ -19,7 +19,6 @@ async function main() {
           "@semantic-release/exec",
           {
             verifyReleaseCmd: "echo ${nextRelease.version} > .NEXT_VERSION",
-            analyzeCommitsCmd: "echo nani",
           },
         ],
       ],
