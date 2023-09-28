@@ -2,7 +2,8 @@
   "dependencies": {
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/github": "^9.2.0",
-    "semantic-release": "^22.0.5"
+    "semantic-release": "^22.0.5",
+    "semver": "^7.5.4"
   },
   "type": "module"
 }

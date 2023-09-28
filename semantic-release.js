@@ -9,13 +9,6 @@ async function main() {
       plugins: [
         "@semantic-release/commit-analyzer",
         [
-          "@semantic-release/github",
-          {
-            successComment: false,
-            failComment: false,
-          },
-        ],
-        [
           "@semantic-release/exec",
           {
             verifyReleaseCmd: "echo ${nextRelease.version} > .NEXT_VERSION",
